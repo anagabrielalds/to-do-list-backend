@@ -1,18 +1,12 @@
-﻿using Google.Apis.Gmail.v1.Data;
-using Microsoft.AspNetCore.Identity;
-using SendGrid;
-using System.Security.Claims;
-using ToDoList.Data.Models;
+﻿using ToDoList.Data.Models;
 using ToDoList.Interface;
 using ToDoList.Repositories;
 using ToDoList.Utils;
 using ToDoList.ViewModel;
-using static Google.Apis.Requests.BatchRequest;
-using Task = ToDoList.Data.Models.Task;
 
 namespace ToDoList.Services
 {
-    public class UserService : BaseService, IValidation
+	public class UserService : BaseService, IValidation
 	{
 		public readonly UserRepository _repository;
 
